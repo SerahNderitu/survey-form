@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <div class="mobile">Desktop Responsiveness</div>
+  <div class="container">
+    <div class="banner">
+      <h1>Student Survey Form</h1>
+      <span><img src="images/notepad.png" alt="" width="100px" /> </span>
+    </div>
+      
+    <form id="surveyForm" action="" method="POST">
+        
+      <!-- Personal DETAILS -->
+      <div class="personal-details">
+        <p class="title">Personal Details</p>
+        <div class="personal-detail1 flex">
+          <input type="text" id="fullName" placeholder="Full Name" />
+          <input type="text" placeholder="Country" />
+        </div>
+        <div class="personal-detail2 flex">
+          <input type="tel" maxlength="10" placeholder="Phone" />
+          <input type="email" placeholder="Email" />
+        </div>
+          
+        <!-- Gender Specifications -->
+        <div class="gender">
+          <span>Gender : </span>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <!-- Soft Skills -->
+      <div class="skills">
+        <p class="title">Soft Skills</p>
+        <p class="heading">Select all that apply to you</p>
+
+        <div class="skills-share">
+          <ul class="skills-list">
+            <div class="first-col">
+              <li>
+                <input type="checkbox" id="communication" />
+                <label for="communication">Communication</label>
+              </li>
+              <li>
+                <input type="checkbox" id="teamwork" />
+                <label for="teamwork">Teamwork</label>
+              </li>
+              <li>
+                <input type="checkbox" id="adaptability" />
+                <label for="adaptability">Adaptability</label>
+              </li>
+            </div>
+            <div class="second-col">
+              <li>
+                <input type="checkbox" id="leadership" />
+                <label for="leadership">Leadership</label>
+              </li>
+              <li>
+                <input type="checkbox" id="management" />
+                <label for="management">Management</label>
+              </li>
+              <li>
+                <input type="checkbox" id="writing" />
+                <label for="writing">Writing</label>
+              </li>
+            </div>
+            <div class="third-col">
+              <li>
+                <input type="checkbox" id="listening" />
+                <label for="listening">Listening</label>
+              </li>
+              <li>
+                <input type="checkbox" id="critical-thinking" />
+                <label for="critical-thinking">Critical thinking</label>
+              </li>
+              <li>
+                <input type="checkbox" id="creativity" />
+                <label for="creativity">Creativity</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+     <div class="hobbies">
+        <p class="title">Hobbies</p>
+         <p class="heading">Select all that apply to you</p>
+        <div class="hobbiess-share">
+          <ul class="hobbies-list">
+            <div class="first-col">
+              <li>
+                <input type="checkbox" id="reading" />
+                <label for="reading">Reading</label>
+              </li>
+              <li>
+                <input type="checkbox" id="drawing" />
+                <label for="drawing">Drawing</label>
+              </li>
+              <li>
+                <input type="checkbox" id="painting" />
+                <label for="painting">Painting</label>
+              </li>
+            </div>
+            <div class="second-col">
+              <li>
+                <input type="checkbox" id="dancing" />
+                <label for="dancing">Dancing</label>
+              </li>
+              <li>
+                <input type="checkbox" id="cooking" />
+                <label for="cooking">Cooking</label>
+              </li>
+              <li>
+                <input type="checkbox" id="hiking" />
+                <label for="hiking">Hiking</label>
+              </li>
+            </div>
+            <div class="third-col">
+              <li>
+                <input type="checkbox" id="yoga" />
+                <label for="yoga">Yoga</label>
+              </li>
+              <li>
+                <input type="checkbox" id="coding" />
+                <label for="coding">Coding</label>
+              </li>
+              <li>
+                <input type="checkbox" id="swimming" />
+                <label for="swimming">Swimming</label>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <!-- SURVEY QUESTIONS -->
+      <div class="survey">
+        <p class="title">Questions</p>
+        <div class="questions question-1">
+          <p>1. Do you own a phone/laptop?</p>
+          <input type="radio" id="q1-y" value="YES" name="q1" />
+          <label for="q1-y">Yes</label>
+          <input type="radio" id="q1-n" value="No" name="q1" />
+          <label for="q1-n">No</label>
+        </div>
+        <div class="questions question-2">
+          <p>2. Do you have internet access?</p>
+          <input type="radio" id="q2-y" value="YES" name="q2" />
+          <label for="q2-y">Yes</label>
+          <input type="radio" id="q2-n" value="No" name="q2" />
+          <label for="q2-n">No</label>
+        </div>
+        <div class="questions question-3">
+          <p>3. How much time do you spend online in a day?</p>
+          <input type="radio" id="q3-y" value="Less" name="q3" />
+          <label for="q3-y">Less than 8hrs</label>
+          <input type="radio" id="q3-n" value="More" name="q3" />
+          <label for="q3-n">More than 8hrs</label>
+        </div>
+        <div class="questions question-4">
+          <p>4. Do you attend online or on-site classes?</p>
+          <input type="radio" id="q4-y" value="Online" name="q4" />
+          <label for="q4-y">Online</label>
+          <input type="radio" id="q4-n" value="On-site" name="q4" />
+          <label for="q4-n">On-site</label>
+        </div>
+        <div class="questions question-5">
+          <p>5. Rate the strength of your internet</p>
+            <input type="radio" id="poor" value="Poor" name="q5" />
+          <label for="poor">Poor</label>
+          <input type="radio" id="good" value="Good" name="q5" />
+          <label for="good">Good</label>
+          <input type="radio" id="excellent" value="Excellent" name="q5" />
+          <label for="excellent">Excellent</label>
+        </div>
+          <div class="questions question-6">
+          <p>6. What is the level of your education?</p>
+          <input type="radio" id="q6-l" value="Primary" name="q6" />
+          <label for="q6-l">Primary</label>
+          <input type="radio" id="q6-l" value="Secondary" name="q6" />
+          <label for="q6-l">Secondary</label>
+            <input type="radio" id="q6-l" value="Tertiary" name="q6" />
+          <label for="q6-l">Tertiary</label>
+            <input type="radio" id="q6-l" value="University" name="q6" />
+          <label for="q6-l">University</label>
+        </div>
+      </div>
+      <div class="btns">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+    
+</body>
+
+</html>
